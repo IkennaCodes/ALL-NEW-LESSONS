@@ -2,6 +2,7 @@ import turtle as t
 import random 
 
 t.speed(0)
+t.bgcolor("#DFF6FF")
 
 t.penup()
 t.goto(-300,-100)
@@ -67,12 +68,12 @@ t.circle(60,180)
 t.end_fill()
 
 #cactus
-t.width(2)
+t.width(1.5)
 t.penup()
 t.goto(80,-42)
 t.pendown()
 t.begin_fill()
-t.color("black","green")
+t.color("black","#75A14F")
 t.right(180)
 t.forward(20)
 t.penup()
@@ -94,4 +95,14 @@ t.circle(15,-180)
 t.right(90)
 t.forward(33)
 t.end_fill()
+
+#sun
+t.penup()
+t.goto(0,200)
+t.pendown()
+t.color("yellow")
+for x in range (20):
+   t.forward(100)
+   t.right(150)
+   t.width(2)
 t.mainloop()

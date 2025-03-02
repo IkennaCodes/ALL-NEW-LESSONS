@@ -22,6 +22,7 @@ Adults = int(input("How many adults are with you tooday?"))
 Children = int(input("How many children are with you today?"))
 
 Cost = (Adults*8) + (Children*5)
+print ("Total = £", cost)
 
 Paying = int(input("How much are you paying?"))
 

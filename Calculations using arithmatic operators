@@ -1,0 +1,32 @@
+
+"""
+1. You and your friends have gone to the Phoenix mall
+ and bought some T-Shirts of £3 each and trousers of £8 each
+ from the showroom. Write a program to find out the total amount payable.
+
+"""
+t_shirts = int(input("How many t shirts did you buy?"))
+trousers = int(input("How many trousers did you buy?"))
+
+total = (t_shirts*3) + (trousers*8)
+
+print ("Total amount payable = £", total)
+
+"""
+2. Create a project to calculate the total cost for cinema tickets,
+ where adult tickets are £8 and children's tickets are £5.
+   The program should ask the user how much they will pay and then return the remaining balance.
+
+"""
+Adults = int(input("How many adults are with you tooday?"))
+Children = int(input("How many children are with you today?"))
+
+Cost = (Adults*8) + (Children*5)
+
+Paying = int(input("How much are you paying?"))
+
+Remaining = Paying - Cost
+
+
+
+print ("Total amount remaining = £", Remaining)

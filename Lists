@@ -1,0 +1,60 @@
+fruits = ["apple", "banana", "mango"]
+
+"""Print item at position 0 - print(list_name[0])"""
+print(fruits[0])  #The Output was apple
+
+"""Number of items in the list - len(list_name)"""
+print(len(fruits))  #The Output was 3
+
+"""Replace an item - list_name[index] = new_value"""
+fruits[1] = "grape"
+print(fruits)  # Output was ['apple', 'grape', 'mango']
+
+"""Remove an item - list_name.remove(item)"""
+fruits.remove("mango")
+print(fruits)  # Output was ['apple', 'grape']
+
+"""Check if something's in the list - item in list_name"""
+print("apple" in fruits)  # Output is True
+
+"""Add an item to the end - list_name.append(value)"""
+fruits.append("kiwi")
+print(fruits)  # Output became ['apple', 'grape', 'kiwi']
+
+"""Insert item at a specific index - list_name.insert(index, value)"""
+fruits.insert(1, "pineapple")
+print(fruits)  # Output added pineapple to 1 position like so ['apple', 'pineapple', 'grape', 'kiwi']
+
+"""Find index of item - list_name.index(item)"""
+print(fruits.index("grape"))  # Output found the position of grape which was 2
+
+"""Count how many times item appears - list_name.count(item)"""
+print(fruits.count("apple"))  # Output is 1
+
+"""Print the whole list - print(list_name)"""
+print(fruits)  # Output: ['apple', 'pineapple', 'grape', 'kiwi']
+
+"""Reverse the list - list_name.reverse()"""
+fruits.reverse()
+print(fruits)  # Output became ['kiwi', 'grape', 'pineapple', 'apple']
+
+"""Sort the list - list_name.sort()"""
+fruits.sort()
+print(fruits)  # Output in alphabetical order: ['apple', 'grape', 'kiwi', 'pineapple']
+
+"""List slicing - list_name[start:end:step]"""
+print(fruits[1:3])  # Output: ['grape', 'kiwi']
+
+"""Loop through list - for item in list_name"""
+for fruit in fruits:
+    print(fruit)
+# Output:
+# apple
+# grape
+# kiwi
+# pineapple
+
+
+
+
+

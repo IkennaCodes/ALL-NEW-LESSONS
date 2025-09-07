@@ -1,7 +1,7 @@
 #Creating the board
 def print_board(board):
     for row in board:
-        print("|".join(row))
+        print(" | ".join(row))
         print("-" * 9)
 
 #Functions to check for winner
@@ -9,13 +9,15 @@ def check_winner(board,index = 0):
     if index == 3:
         return None
     #row
-    if board[index][0] == board[index][2] != " ":
+    if board[0][index] == board[1][index] == board[2][index] != " ":
         return board [index][0]
     
     #column
     if board [0][index] == board [1][index] == board [2][index] != " ":
-        return check_winner(board,index +1)
+        return board [0][index]
+    return check_winner(board,index +1)
     
+
 def check_diagonal(board):
     #Left to right
     if board [0][0] == board [1][1] == board[2][2] != " ":
@@ -39,13 +41,14 @@ def play_game():
 
             try:
                 row = int(input("Enter the row (0-2):"))
-                col = int(input("Enter the row (0-2):"))
-                if not (0 < row <= 2 and 0 <= col <=2):
+                col = int(input("Enter the columm (0-2):"))
+                if not (0 <= row <= 2 and 0 <= col <=2):
                     print("Invalid Input! Row and Column must be between 0 and 2 only")
-                continue
+                    continue
 
             except ValueError:
                 print("Please enter a valid integer!")
+                continue
 
             if board [row][col] == " ":
                 board [row][col] = current_player
